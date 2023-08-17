@@ -8,8 +8,8 @@ from flask import Flask, render_template
 #Create a Flask application instance
 app = Flask("__name__")
 
-#Define a route for onepage using strict slashes
-@app.route('/airbnb-onepage/', strict_slashes=False)
+#Define a route for /airbnb-onepage/
+@app.route('/airbnb-onepage/')
 def hello_airbnb():
     return "Hello HBNB!\n"
 
