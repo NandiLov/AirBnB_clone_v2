@@ -3,7 +3,7 @@
 Your web application must be listening on 0.0.0.0, port 5000
 """
 
-from flask import Flask, render_template
+from flask import Flask
 
 #Create a Flask application instance
 app = Flask("__name__")
@@ -12,6 +12,7 @@ app = Flask("__name__")
 @app.route('/airbnb-onepage/')
 def hello_airbnb():
     return "Hello HBNB!\n"
+
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=5000, debug=None)
