@@ -9,7 +9,7 @@ from flask import Flask
 app = Flask("__name__")
 
 #Define a route for /airbnb-onepage/
-@app.route('/airbnb-onepage/')
+@app.route('/airbnb-onepage/', strict_slashes=False)
 def hello_airbnb():
     return "Hello HBNB!\n"
 
